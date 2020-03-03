@@ -13,3 +13,5 @@ Once all team members have been selected the array of employees [a manager and t
 provided to the render html function.
 
 The resulting html string is written to a file in the Output folder.
+
+## GIF

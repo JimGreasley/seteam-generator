@@ -165,9 +165,11 @@ function buildTeam() {
         });
       }
       else {
+          // team is complete, create the HTML
           //console.log(teamMembers);
           var html = render(teamMembers);
           //console.log(html)
+          // save HTML in output folder
           fs.writeFile(outputPath, html, function(err) {
             if (err) {
               return console.log(err);
