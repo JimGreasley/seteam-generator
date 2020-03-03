@@ -38,22 +38,22 @@ const render = require("./lib/htmlRenderer");
 var managerQuestions = [
   {
     type: "input",
-    message: "What is your name?",
+    message: "What is the Manager's name?",
     name: "name"
   },
   {
     type: "input",
-    message: "What is your employee id?",
+    message: "What is the Manager's employee id?",
     name: "id"
   },
   {
     type: "input",
-    message: "What is your email address?",
+    message: "What is the Manager's email address?",
     name: "email"
   },
   {
     type: "input",
-    message: "What is your office number?",
+    message: "What is the Manager's office number?",
     name: "officeNumber"
   }
 ];
@@ -116,13 +116,6 @@ var teamMemberSelect = {
 // create empty array to hold all team member objects 
 var teamMembers = [];
 
-//  var html = render(
-//    [new Manager("Jim", 234, "jim@abc.com", 432),
-//     new Engineer("Jill", 567, "jill@abc.com", "jillsmith"),
-//     new Intern("Billy", 432, "billy@abc.com", "UCLA")
-//    ]);
-// console.log(html);
-
 
 
 function main() {
@@ -146,8 +139,6 @@ function main() {
 
 
 function buildTeam() {
-
-  //let moreTeamMembers = false;
 
   // determine what type of team member to add to team
   inquirer.prompt(teamMemberSelect).then(function (selection) {
@@ -181,6 +172,10 @@ function buildTeam() {
             if (err) {
               return console.log(err);
             }
+            //else {
+            //  // display the team html that was just created
+            //  window.location.href = "team.html";
+            //}
           });
       }
 

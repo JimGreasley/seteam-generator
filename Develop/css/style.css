@@ -1,0 +1,10 @@
+/* background colors for employee types */
+.mgr {
+    background-color: #a19da699;
+}
+.eng {
+    background-color: #98a5b899;
+}
+.int {
+    background-color: #87c75f99;
+}
