@@ -18,4 +18,4 @@ The resulting html string is written to a file in the Output folder.
 
 ## GIF
 
-./images/seteam-gen.gif
+/Develop/images/seteam-gen.gif
